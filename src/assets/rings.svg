@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 659 300" height="300px" width="659px" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <clipPath id="interlace">
+      <path d="M -11,-11 h 22 v 22 h -22 z M 11,-1.5 a 10.5,10.5 0 0,0 0,21 v -3 a 7.5,7.5 0 1,1 0,-15 M -11,1.5 a 7.5,7.5 0 1,1 0,15 v 3 a 10.5,10.5 0 0,0 0,-21 z" clip-rule="evenodd"/>
+    </clipPath>
+    <clipPath id="interlace_Firefox">
+      <path d="M 0,0 l -12,12 h 12 z"/>
+    </clipPath>
+    <g id="ring">
+      <circle r="9" clip-path="url(#interlace)"/>
+      <circle r="9" clip-path="url(#interlace_Firefox)"/>
+      <path d="M 0,-9 a 9,9 0 0,1 9,9" transform="rotate(45)"/>
+    </g>
+    <bx:guide x="20" y="6.811" angle="0"/>
+  </defs>
+  <g fill="none" stroke-width="2" style="" transform="matrix(10.286986, 0, 0, 10.286986, 329.474854, 103.881683)">
+    <g stroke="#0085c7" transform="translate(-22,0)">
+      <g>
+        <circle r="9" clip-path="url(#interlace)"/>
+        <circle r="9" clip-path="url(#interlace_Firefox)"/>
+        <path d="M 0,-9 a 9,9 0 0,1 9,9" transform="rotate(45)"/>
+      </g>
+      <path d="M 0,-9 a 9,9 0 0,0 0,18"/>
+    </g>
+    <g stroke="black">
+      <circle r="9" clip-path="url(#interlace)"/>
+      <circle r="9" clip-path="url(#interlace_Firefox)"/>
+      <path d="M 0,-9 a 9,9 0 0,1 9,9" transform="rotate(45)"/>
+    </g>
+    <g stroke="#df0024" transform="translate(22,0)">
+      <g>
+        <circle r="9" clip-path="url(#interlace)"/>
+        <circle r="9" clip-path="url(#interlace_Firefox)"/>
+        <path d="M 0,-9 a 9,9 0 0,1 9,9" transform="rotate(45)"/>
+      </g>
+      <path d="M 0,-9 a 9,9 0 0,1 0,18"/>
+    </g>
+    <g transform="matrix(-1, 0, 0, -1, -11, 9)" stroke="#f4c300">
+      <circle r="9" clip-path="url(#interlace)"/>
+      <circle r="9" clip-path="url(#interlace_Firefox)"/>
+      <path d="M 0,-9 a 9,9 0 0,1 9,9" transform="rotate(45)"/>
+    </g>
+    <g transform="matrix(-1, 0, 0, -1, 11, 9)" stroke="#009f3d">
+      <circle r="9" clip-path="url(#interlace)"/>
+      <circle r="9" clip-path="url(#interlace_Firefox)"/>
+      <path d="M 0,-9 a 9,9 0 0,1 9,9" transform="rotate(45)"/>
+    </g>
+  </g>
+</svg>
