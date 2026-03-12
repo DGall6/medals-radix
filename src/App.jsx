@@ -24,10 +24,9 @@ import { HubConnectionBuilder } from "@microsoft/signalr";
 
 function App() {
   const [appearance, setAppearance] = useState("dark");
-  // const apiEndpoint = "https://medalsapi.azurewebsites.net/api/country";
-  const apiEndpoint = "https://medalsapi.azurewebsites.net/jwtapi/country";
-  const hubEndpoint = "https://medalsapi.azurewebsites.net/medalsHub";
-  const userEndpoint = "https://jwtswagger.azurewebsites.net/api/user/login";
+  const apiEndpoint = "https://medals-api-final-h0ayf0gbbvftaad8.westus3-01.azurewebsites.net/jwtapi/country";
+  const hubEndpoint = "https://medals-api-final-h0ayf0gbbvftaad8.westus3-01.azurewebsites.net/medalsHub";
+  const userEndpoint = "https://jwtswagger-cddzatfwdvevdbaf.westus3-01.azurewebsites.net/api/user/login";
   
   const [alertOpen, setAlertOpen] = useState(false);
   const [alertTitle, setAlertTitle] = useState("");
@@ -389,6 +388,7 @@ function App() {
       const encoded = resp.data.token;
       localStorage.setItem("token", encoded);
       setUser(getUser(encoded));
+      addToast("Successfully logged in", "success");
     } catch (ex) {
       if (
         ex.response &&
